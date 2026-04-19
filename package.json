@@ -1,0 +1,33 @@
+{
+  "name": "checkerz",
+  "version": "1.0.0",
+  "description": "A simple checkers game bundled with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.ue9e7.checkerz",
+    "productName": "CheckerZ",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "portable"
+
+    }
+  },
+  "devDependencies": {
+    "electron": "39.5.2",
+    "electron-builder": "^26.7.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
